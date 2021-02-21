@@ -1,0 +1,45 @@
+.platform {
+    width: 32px;
+    height: auto;
+    float: left;
+    padding-right: 5px;
+    transform: translateY(-10px);
+    filter: blur(0.1x);
+    padding-bottom: 0px;
+    margin-bottom: 0px !important;
+}
+
+.xbox {
+    transform: translateY(-6px);
+}
+
+.ps {
+    transform: translateY(-6px);
+}
+
+.linux {
+    padding-left: 10px;
+}
+
+#credits-slide {
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute !important;
+}
+
+#credits-container {
+    position: absolute !important;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-117px);
+}
+
+#credits {
+    left: 0;
+    bottom: 0;
+    width: 1920px;
+    position: absolute;
+    text-align: left;
+    font-family: monospace;
+    font-size: 9pt;
+}

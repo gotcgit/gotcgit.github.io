@@ -1,0 +1,239 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Portal 2</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<link rel="stylesheet" href="misc.css">
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section data-background-video="./assets/bg1.mp4" data-background-video-loop data-background-video-muted>
+
+				<h3 data-fragment-index="1" class="fragment">WARUM</h3>
+				<img data-fragment-index="0" class="fragment" src="./assets/Portal2-logo.svg" />
+				<h3 data-fragment-index="1" class="fragment r-fit-text">DAS BESTE SPIEL IST</h3>
+
+				<div data-fragment-index="2" class="fragment">
+					<h3 class="r-fit-text" style="padding-top: 90px;">UND JEDER, DER WAS ANDERES BEHAUPTET KEINE AHNUNG
+						HAT</h3>
+				</div>
+			</section>
+
+			<section data-background-image="./assets/bg7.jpg">
+				<ul>
+					<li><b>Release:</b> 19. April, 2011</li>
+					<li class="fragment"><b>Publisher:</b> Valve</li>
+					<li class="fragment" style="float: left"><b>Produzent: </b>Gabe Newell</li>
+					<li class="fragment"><b>Kategorie:</b> Puzzle Platformer</li>
+					<li class="fragment"><b>Engine:</b> Source</li>
+					<div class="fragment">
+						<li style="float: left;"><b>Platformen:</b></li>
+						<div style="display: inline;">
+							<img src="./assets/linux.png" class="linux platform">
+							<img src="./assets/win.png" class="platform">
+							<img src="./assets/mac.png" class="platform">
+							<img src="./assets/xbox.png" class="platform xbox">
+							<img src="./assets/ps.png" class="platform ps">
+						</div>
+					</div>
+				</ul>
+				<img src="./assets/cover.jpg" class="fragment" style="width: 256px; float: right;" />
+				<aside class="notes">
+					- Valve -> machten früher mit spielen geld, heute nur noch geld
+				</aside>
+			</section>
+
+			<section data-background-image="./assets/bg6.jpg">
+				<h3 class="r-fit-text">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Story&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+			</section>
+
+			<section data-background-image="./assets/bg8.jpg">
+				<ul>
+					<li><b>Hauptcharakter:</b> Chell</li>
+					<li class="fragment"><b>Ziele</b></li>
+					<ul>
+						<li class="fragment">Tests absolvieren</li>
+						<li class="fragment">Aus der Einrichtung entkommen</li>
+						<li class="fragment">Nicht sterben</li>
+					</ul>
+				</ul>
+				<aside class="notes">
+					- Chell ist stumm, sichtbar nur durch portale<br>
+					- Spiel ist linear<br>
+					- Testräume<br>
+					- Einrichtung heißt Aperture Science
+				</aside>
+			</section>
+
+			<section data-background-image="./assets/bg9.jpg">
+				<h3 class="r-fit-text">
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Charaktere&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h3>
+			</section>
+
+			<section data-background-image="./assets/chell.jpg">
+				<h3>Chell</h3>
+			</section>
+
+			<section data-background-image="./assets/glados.jpg">
+				<h3 style="text-transform: none !important;">GLaDOS</h3>
+			</section>
+			<section data-background-image="./assets/wheatley.jpg">
+				<h3 style="transform: translate(-70px);">Wheatley</h3>
+			</section>
+			</section>
+
+			<section data-background-image="./assets/others.jpg">
+
+			</section>
+			<section data-background-image="./assets/bg9.jpg">
+				<img src="./assets/cave.jpg" />
+			</section>
+
+			<section data-background-image="./assets/bg2.jpg">
+				<h3 class="r-fit-text">&nbsp;&nbsp;Gameplay &amp; Design&nbsp;&nbsp;</h3>
+				<aside class="notes">
+					- paar screenshots, kein video weil pixel matsch
+				</aside>
+			</section>
+
+			<section data-background-image="./assets/bg3.jpg">
+				<aside class="notes">
+					- testraum, laser, würfel, verfall
+				</aside>
+			</section>
+			<section data-background-image="./assets/bg4.jpg">
+				<aside class="notes">
+					- Tür, Rohr
+				</aside>
+			</section>
+			<section data-background-image="./assets/bg5.jpg">
+				<aside class="notes">
+					- Portal, Turrets, Säure, Lichttunnel
+				</aside>
+			</section>
+			<section>
+				<video id="bots" controls volume="0.5">
+					<source data-src="./assets/botss.mp4" type="video/mp4" />
+					<video>
+			</section>
+			<section id="credits-slide" data-background-video="./assets/credits.mp4" data-background-video-loop
+				data-background-video-muted>
+				<div id="credits-container">
+					<p id="credits">
+					</p>
+				</div>
+			</section>
+			<section data-background-video="./assets/end.mp4" data-background-video-loop data-background-video-muted>
+			</section>
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/zoom/zoom.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			controls: false,
+			progress: false,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
+		});
+
+		var credsx = 0, credsy = 0;
+		var functionHandle = null;
+		var credits = [
+			'Quellen',
+			'-------',
+			'https://en.wikipedia.org/wiki/Portal_2',
+			'https://tristanreidford.blogspot.com/2011/05/portal2-70s-style-movie-poster.html',
+			'https://files.gamebanana.com/bitpit/cave_sarcasm.jpg',
+			'https://www.thinkwithportals.com/',
+			'https://store.steampowered.com/app/620',
+			'https://www.wallpaperup.com/uploads/wallpapers/2013/12/13/194317/352b87d2395a457b9e3e1c90934ea412.jpg',
+			'https://m.media-amazon.com/images/M/MV5BNzEyNGM5YjgtYjFkMC00MTE1LTk1YjgtNjAyYjA2ODUzNzQwXkEyXkFqcGdeQXVyNjk2MTcyMDA@._V1_FMjpg_UY1008_.jpg',
+			'https://blog.kazitor.com/2014/12/portal-ascii/',
+			'https://github.com/hakimel/reveal.js',
+			'https://github.com/reveal/multiplex',
+			'',
+			'            ,:/+/-',
+			'            /M/              .,-=;//;-',
+			'       .:/= ;MH/,    ,=/+%$XH@MM#@:',
+			'      -$##@+$###@H@MMM#######H:.    -/H#',
+			' .,H@H@ X######@ -H#####@+-     -+H###@X',
+			'  .,@##H;      +XM##M/,     =%@###@X;-',
+			'X%-  :M##########$.    .:%M###@%:',
+			'M##H,   +H@@@$/-.  ,;$M###@%,          -',
+			'M####M=,,---,.-%%H####M$:          ,+@##',
+			'@##################@/.         :%H##@$-',
+			'M###############H,         ;HM##M$=',
+			'#################.    .=$M##M$=',
+			'################H..;XM##M$=          .:+',
+			'M###################@%=           =+@MH%',
+			'@#################M/.         =+H#X%=',
+			'=+M###############M,      ,/X#H+:,',
+			'  .;XM###########H=   ,/X#H+:;',
+			'     .=+HM#######M+/+HM@+=.',
+			'         ,:/%XM####H/.',
+			'              ,.:=-.',
+			'',
+			''
+		];
+
+		Reveal.on('slidechanged', event => {
+			document.getElementById("bots").volume = 0.3;
+
+			if (event.currentSlide.querySelector('#credits-container') !== null) {
+				// initiate credits
+
+				setTimeout(function () {
+					functionHandle = setInterval(function () {
+						let creds = event.currentSlide.querySelector('#credits');
+						let text = credits[credsy];
+						if (credsy >= credits.length) {
+							clearInterval(functionHandle);
+							return;
+						}
+						if (credsx >= text.length) {
+							credsx = 0;
+							credsy++;
+							creds.innerHTML += '<br>';
+							return;
+						}
+
+						let char = text.charAt(credsx++);
+						if (char === ' ')
+							char = '&nbsp;';
+						creds.innerHTML += char;
+					}, 10);
+				}, 700);
+			} else {
+				// reset credits
+				let creds = document.querySelector('#credits');
+				creds.innerHTML = '';
+				credsx = 0;
+				credsy = 0;
+				clearInterval(functionHandle);
+			}
+		});
+	</script>
+</body>
+
+</html>
