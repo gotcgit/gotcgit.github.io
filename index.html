@@ -152,7 +152,18 @@
 			hash: true,
 			controls: false,
 			progress: false,
+			multiplex: {
+				// Example values. To generate your own, see the socket.io server instructions.
+				secret: null, // null so the clients do not have control of the master presentation
+				id: '080da52e4d7f61a2', // id, obtained from socket.io server
+				url: 'https://reveal-multiplex.glitch.me/' // Location of socket.io server
+			},
 
+			// Don't forget to add the dependencies
+			dependencies: [
+				{ src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+				{ src: 'https://reveal-multiplex.glitch.me/client.js', async: true }
+			],
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
 		});
@@ -173,26 +184,26 @@
 			'https://github.com/hakimel/reveal.js',
 			'https://github.com/reveal/multiplex',
 			'',
-			'            ,:/+/-',
-			'            /M/              .,-=;//;-',
-			'       .:/= ;MH/,    ,=/+%$XH@MM#@:',
-			'      -$##@+$###@H@MMM#######H:.    -/H#',
-			' .,H@H@ X######@ -H#####@+-     -+H###@X',
-			'  .,@##H;      +XM##M/,     =%@###@X;-',
-			'X%-  :M##########$.    .:%M###@%:',
-			'M##H,   +H@@@$/-.  ,;$M###@%,          -',
-			'M####M=,,---,.-%%H####M$:          ,+@##',
-			'@##################@/.         :%H##@$-',
-			'M###############H,         ;HM##M$=',
-			'#################.    .=$M##M$=',
-			'################H..;XM##M$=          .:+',
-			'M###################@%=           =+@MH%',
-			'@#################M/.         =+H#X%=',
-			'=+M###############M,      ,/X#H+:,',
-			'  .;XM###########H=   ,/X#H+:;',
-			'     .=+HM#######M+/+HM@+=.',
-			'         ,:/%XM####H/.',
-			'              ,.:=-.',
+			'               ,:/+/-',
+			'               /M/              .,-=;//;-',
+			'          .:/= ;MH/,    ,=/+%$XH@MM#@:',
+			'         -$##@+$###@H@MMM#######H:.    -/H#',
+			'    .,H@H@ X######@ -H#####@+-     -+H###@X',
+			'     .,@##H;      +XM##M/,     =%@###@X;-',
+			'   X%-  :M##########$.    .:%M###@%:',
+			'   M##H,   +H@@@$/-.  ,;$M###@%,          -',
+			'   M####M=,,---,.-%%H####M$:          ,+@##',
+			'   @##################@/.         :%H##@$-',
+			'   M###############H,         ;HM##M$=',
+			'   #################.    .=$M##M$=',
+			'   ################H..;XM##M$=          .:+',
+			'   M###################@%=           =+@MH%',
+			'   @#################M/.         =+H#X%=',
+			'   =+M###############M,      ,/X#H+:,',
+			'     .;XM###########H=   ,/X#H+:;',
+			'        .=+HM#######M+/+HM@+=.',
+			'            ,:/%XM####H/.',
+			'                 ,.:=-.',
 			'',
 			''
 		];
