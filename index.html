@@ -153,16 +153,12 @@
 			controls: false,
 			progress: false,
 			multiplex: {
-				// Example values. To generate your own, see the socket.io server instructions.
-				secret: null, // null so the clients do not have control of the master presentation
-				id: 'a0bd99abb173cf95', // id, obtained from socket.io server
-				url: 'https://b4zin.ga/' // Location of socket.io server
+				url: 'ws://b4zin.ga/' // Location of socket.io server
 			},
 
 			// Don't forget to add the dependencies
 			dependencies: [
-				{ src: './js/socket.io.min.js', async: true },
-				{ src: 'https://reveal-multiplex.glitch.me/client.js', async: true }
+				{ src: './js/client.js', async: true }
 			],
 			// Learn about plugins: https://revealjs.com/plugins/
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealZoom]
